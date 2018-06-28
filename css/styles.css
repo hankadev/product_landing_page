@@ -10,17 +10,33 @@ body {
 /*****  HEADER incl. NAVIGATION *****/
 
 header {
-  width: 1200px;
-  margin: auto;
+  width: 100%;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-#logo {
-  width 30%;
+#logo, #nav-bar {
+  width: 100%;
 }
 
-#nav-bar {
-  width: 70%;
+@media (min-width: 500px) {
+  #logo {
+    width: 30%;
+  }
+  #nav-bar {
+    width: 70%;
+  }
+  #nav-bar ul {
+    text-align: right;
+  }
+}
+
+@media (min-width: 1200px) {
+  header {
+    width: 1200px;
+    margin: auto;
+  }
 }
 
 #header-img {
@@ -29,7 +45,8 @@ header {
 
 #nav-bar ul {
   list-style: none;
-  text-align: right;
+  text-align: center;
+  padding: 0;
 }
 
 #nav-bar ul li {
@@ -40,7 +57,8 @@ header {
 
 .nav-link {
   text-decoration: none;
-  color: var(--lignt-blue)
+  color: var(--lignt-blue);
+  font-weight: bold;
 }
 
 /*****  LANDING SECTION *****/
