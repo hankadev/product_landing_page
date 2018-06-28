@@ -1,0 +1,51 @@
+:root {
+  --lignt-blue: #27BDE0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*****  HEADER incl. NAVIGATION *****/
+
+header {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+}
+
+#logo {
+  width 30%;
+}
+
+#nav-bar {
+  width: 70%;
+}
+
+#header-img {
+  height: 50px;
+}
+
+#nav-bar ul {
+  list-style: none;
+  text-align: right;
+}
+
+#nav-bar ul li {
+  display: inline;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--lignt-blue)
+}
+
+/*****  LANDING SECTION *****/
+
+#landing-img {
+  max-height: 100vh;
+  width: 100%;
+}
