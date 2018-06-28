@@ -5,6 +5,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: "Heebo", sans-serif;
 }
 
 /*****  HEADER incl. NAVIGATION *****/
@@ -18,25 +19,6 @@ header {
 
 #logo, #nav-bar {
   width: 100%;
-}
-
-@media (min-width: 500px) {
-  #logo {
-    width: 30%;
-  }
-  #nav-bar {
-    width: 70%;
-  }
-  #nav-bar ul {
-    text-align: right;
-  }
-}
-
-@media (min-width: 1200px) {
-  header {
-    width: 1200px;
-    margin: auto;
-  }
 }
 
 #header-img {
@@ -66,4 +48,54 @@ header {
 #landing-img {
   max-height: 100vh;
   width: 100%;
+}
+
+/*****  ABOUT SECTION *****/
+
+#about {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.video {
+  width: 100%;
+  order: 2;
+}
+
+.info {
+  width: 100%;
+  order: 1;
+}
+
+/*****  MEDIA QUERIES *****/
+
+@media (min-width: 500px) {
+  #logo {
+    width: 30%;
+  }
+  #nav-bar {
+    width: 70%;
+  }
+  #nav-bar ul {
+    text-align: right;
+  }
+}
+
+@media (min-width: 800px) {
+  .video {
+    width: 50%;
+    order: 1;
+  }
+  .info {
+    width: 50%;
+    order: 2;
+  }
+}
+
+@media (min-width: 1200px) {
+  header, main {
+    width: 1200px;
+    margin: auto;
+  }
 }
