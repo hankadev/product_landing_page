@@ -1,5 +1,6 @@
 :root {
-  --lignt-blue: #27BDE0;
+  --light-blue: #27BDE0;
+  --dark-blue: #000066;
 }
 
 body {
@@ -39,7 +40,7 @@ header {
 
 .nav-link {
   text-decoration: none;
-  color: var(--lignt-blue);
+  color: var(--light-blue);
   font-weight: bold;
 }
 
@@ -64,8 +65,41 @@ header {
 }
 
 .info {
+  box-sizing: border-box;
   width: 100%;
   order: 1;
+  padding-left: 10px;
+  font-size: 1.2em;
+}
+
+.fas, .far {
+  color: var(--light-blue);
+}
+
+#inputEmail {
+  padding: 5px;
+  border: 1px solid var(--light-blue);
+  border-radius: 5px;
+  min-width: 250px;
+}
+
+#submit {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: var(--light-blue);
+  border: 1px solid var(--dark-blue);
+  color: var(--dark-blue);
+  font-weight: bold;
+}
+
+#submit:hover {
+  background-color: var(--dark-blue);
+  border: 1px solid var(--light-blue);
+  color: var(--light-blue);
+}
+
+form {
+  margin-bottom: 20px;
 }
 
 /*****  MEDIA QUERIES *****/
