@@ -2,6 +2,7 @@
   --light-blue: #27BDE0;
   --dark-blue: #000066;
   --white: #fff;
+  --bg-light-blue: #bcebf5;
 }
 
 body {
@@ -79,7 +80,7 @@ header {
   font-size: 1.2em;
 }
 
-.fas, .far {
+.info .fas, .info .far {
   color: var(--light-blue);
 }
 
@@ -90,7 +91,7 @@ header {
   min-width: 250px;
 }
 
-#submit {
+#submit, .button {
   padding: 5px;
   border-radius: 5px;
   background-color: var(--light-blue);
@@ -99,14 +100,49 @@ header {
   font-weight: bold;
 }
 
-#submit:hover {
+#submit:hover, .button:hover {
   background-color: var(--dark-blue);
-  border: 1px solid var(--light-blue);
   color: var(--light-blue);
 }
 
 #form {
   margin-bottom: 20px;
+}
+
+/*****  OFFERS SECTION *****/
+
+#offers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.ticket-container {
+  width: 200px;
+  background-color: var(--bg-light-blue);
+  border: 2px solid var(--dark-blue);
+  border-radius: 5px;
+  font-weight: bold;
+  color: var(--dark-blue);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.bid {
+  display: inline-block;
+  padding-bottom: 20px;
+}
+
+.bid .button {
+  width: 100%;
+}
+
+.ticket-container .fas {
+  color: var(--dark-blue);
 }
 
 /*****  MEDIA QUERIES *****/
