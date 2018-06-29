@@ -16,8 +16,14 @@ body {
 
 header {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -63,19 +69,30 @@ header {
 /*****  ABOUT SECTION *****/
 
 #about {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
 .video {
   width: 100%;
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
   order: 2;
 }
 
 .info {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
   order: 1;
   padding-left: 10px;
   font-size: 1.2em;
@@ -92,7 +109,7 @@ header {
   min-width: 250px;
 }
 
-#submit, .button {
+#submit, #searchBtn, .button {
   padding: 5px;
   border-radius: 5px;
   border: 1px solid var(--dark-blue);
@@ -100,7 +117,7 @@ header {
   font-weight: bold;
 }
 
-#submit {
+#submit, #searchBtn {
   background-color: var(--bg-light-blue);
 }
 
@@ -108,17 +125,69 @@ header {
   background-color: var(--white);
 }
 
+input::-webkit-input-placeholder {
+  font-family: "Heebo", sans-serif;
+}
+
+input:-ms-input-placeholder {
+  font-family: "Heebo", sans-serif;
+}
+
+input::-ms-input-placeholder {
+  font-family: "Heebo", sans-serif;
+}
+
 input::placeholder {
   font-family: "Heebo", sans-serif;
 }
 
-#submit:hover, .button:hover {
+#submit:hover, #searchBtn:hover, .button:hover {
   background-color: var(--dark-blue);
   color: var(--light-blue);
 }
 
 #form {
   margin-bottom: 20px;
+}
+
+/*****  SEARCH SECTION *****/
+
+.searchForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#fromBox, #toBox, #date {
+  padding: 5px;
+  border: 2px solid var(--light-blue);
+  border-radius: 5px;
+  width: 250px;
+  margin: 0px 10px 20px;
+  box-sizing: border-box;
+}
+
+#searchBtn {
+  margin: 0px 10px 20px;
+  min-width: 250px;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+select {
+  font-family: "Heebo", sans-serif;
+}
+
+/* labels are for screenreaders only */
+
+.searchForm label {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
 }
 
 /*****  OFFERS SECTION *****/
@@ -131,9 +200,16 @@ h1 {
 }
 
 #offers {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
 }
 
@@ -144,9 +220,17 @@ h1 {
   border-radius: 5px;
   font-weight: bold;
   color: var(--dark-blue);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin-top: 20px;
 }
@@ -192,10 +276,14 @@ footer {
 @media (min-width: 800px) {
   .video {
     width: 50%;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
     order: 1;
   }
   .info {
     width: 50%;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
     order: 2;
   }
 }

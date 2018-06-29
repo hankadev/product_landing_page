@@ -49,8 +49,52 @@
     </section>
 
     <section id="search">
-    <h1>Search for fligh ticket</h1>
-
+    <h1>Search for flight ticket</h1>
+      <form class="searchForm" method="post">
+        <label for="fromBox"></label>
+        <select id="fromBox" name="from">
+          <option disabled selected>Departure</option>
+          <option value="Athens">Athens</option>
+          <option value="Barcelona">Barcelona</option>
+          <option value="Berlin">Berlin</option>
+          <option value="Dublin">Dublin</option>
+          <option value="Frankfurt">Frankfurt</option>
+          <option value="London">London</option>
+          <option value="Madrid">Madrid</option>
+          <option value="Moscow">Moscow</option>
+          <option value="Naples">Naples</option>
+          <option value="Oslo">Oslo</option>
+          <option value="Paris">Paris</option>
+          <option value="Porto">Porto</option>
+          <option value="Prague">Prague</option>
+          <option value="Rome">Rome</option>
+          <option value="Stockolm">Stockholm</option>
+          <option value="Vienna">Vienna</option>
+        </select>
+        <label for="toBox"></label>
+        <select id="toBox" name="to">
+          <option disabled selected>Arrival</option>
+          <option value="Athens">Athens</option>
+          <option value="Barcelona">Barcelona</option>
+          <option value="Berlin">Berlin</option>
+          <option value="Dublin">Dublin</option>
+          <option value="Frankfurt">Frankfurt</option>
+          <option value="London">London</option>
+          <option value="Madrid">Madrid</option>
+          <option value="Moscow">Moscow</option>
+          <option value="Naples">Naples</option>
+          <option value="Oslo">Oslo</option>
+          <option value="Paris">Paris</option>
+          <option value="Porto">Porto</option>
+          <option value="Prague">Prague</option>
+          <option value="Rome">Rome</option>
+          <option value="Stockolm">Stockholm</option>
+          <option value="Vienna">Vienna</option>
+        </select>
+        <label for="date"></label>
+        <input id="date" type="date" name="date" value="dd-mm-yyyy">
+        <input id="searchBtn" type="submit" name="search" value="Find available flights">
+      </form>
     </section>
 
     <section id="offers">
