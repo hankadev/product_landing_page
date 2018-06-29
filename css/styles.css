@@ -3,6 +3,7 @@
   --dark-blue: #000066;
   --white: #fff;
   --bg-light-blue: #bcebf5;
+  --red: #d21;
 }
 
 body {
@@ -94,10 +95,21 @@ header {
 #submit, .button {
   padding: 5px;
   border-radius: 5px;
-  background-color: var(--light-blue);
   border: 1px solid var(--dark-blue);
   color: var(--dark-blue);
   font-weight: bold;
+}
+
+#submit {
+  background-color: var(--bg-light-blue);
+}
+
+.button {
+  background-color: var(--white);
+}
+
+input::placeholder {
+  font-family: "Heebo", sans-serif;
 }
 
 #submit:hover, .button:hover {
@@ -110,6 +122,13 @@ header {
 }
 
 /*****  OFFERS SECTION *****/
+
+h1 {
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: var(--dark-blue);
+}
 
 #offers {
   display: flex;
@@ -145,6 +164,17 @@ header {
   color: var(--dark-blue);
 }
 
+/*****  FOOTER *****/
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.heart {
+  color: var(--red);
+}
+
 /*****  MEDIA QUERIES *****/
 
 @media (min-width: 500px) {
@@ -171,7 +201,7 @@ header {
 }
 
 @media (min-width: 1200px) {
-  header, main {
+  header, main, footer {
     width: 1200px;
     margin: auto;
   }
