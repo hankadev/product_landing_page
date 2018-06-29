@@ -1,6 +1,7 @@
 :root {
   --light-blue: #27BDE0;
   --dark-blue: #000066;
+  --white: #fff;
 }
 
 body {
@@ -16,6 +17,12 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+.fixed {
+  position: fixed;
+  width: 100%;
+  background-color: var(--white);
 }
 
 #logo, #nav-bar {
@@ -76,7 +83,7 @@ header {
   color: var(--light-blue);
 }
 
-#inputEmail {
+#email {
   padding: 5px;
   border: 1px solid var(--light-blue);
   border-radius: 5px;
@@ -98,7 +105,7 @@ header {
   color: var(--light-blue);
 }
 
-form {
+#form {
   margin-bottom: 20px;
 }
 
