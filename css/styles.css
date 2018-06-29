@@ -125,18 +125,6 @@ header {
   background-color: var(--white);
 }
 
-input::-webkit-input-placeholder {
-  font-family: "Heebo", sans-serif;
-}
-
-input:-ms-input-placeholder {
-  font-family: "Heebo", sans-serif;
-}
-
-input::-ms-input-placeholder {
-  font-family: "Heebo", sans-serif;
-}
-
 input::placeholder {
   font-family: "Heebo", sans-serif;
 }
@@ -177,7 +165,7 @@ input::placeholder {
   padding: 5px;
 }
 
-select {
+select, input {
   font-family: "Heebo", sans-serif;
 }
 
