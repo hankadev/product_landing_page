@@ -1,5 +1,5 @@
 # Product landing page
-This is my implementation of [Free Code Camp's](https://www.freecodecamp.org/) Survey From project.
+This is my implementation of [Free Code Camp's](https://www.freecodecamp.org/) Product Landing Page project.
 
 [view in browser](https://hanny21.github.io/product_landing_page/)
 
