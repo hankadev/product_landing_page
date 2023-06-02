@@ -1,7 +1,7 @@
 # Product landing page
 This is my implementation of [Free Code Camp's](https://www.freecodecamp.org/) Product Landing Page project.
 
-[view in browser](https://hanny21.github.io/product_landing_page/)
+[view in browser](https://hankadev.github.io/product_landing_page/)
 
 ## Objective
 Built an app that is functionally similar to [this](https://codepen.io/freeCodeCamp/full/RKRbwL/).
